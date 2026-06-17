@@ -5,5 +5,5 @@ public class Usuarios
     public string? Nombre {get;set;}
     public string? Mail {get;set;}
     public int Saldo {get;set;}
-    public List<Juegos>? ListaJuegos {get;set;}
+    public List<juegos>? ListaJuegos {get;set;}
 }

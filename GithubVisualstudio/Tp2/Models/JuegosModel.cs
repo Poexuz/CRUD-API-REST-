@@ -1,5 +1,5 @@
 namespace Tp2.Models;
-public class Juegos
+public class juegos
 {
     public int Id {get;set;}
     public string? Nombre {get;set;}
