@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Electra\\GithubVisualstudio\\Tp2\\Tp2.csproj": {}
+    "C:\\Users\\Electra\\Downloads\\GitTrabajos\\CRUD-API-REST-\\GithubVisualstudio\\Tp2\\Tp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Electra\\GithubVisualstudio\\Tp2\\Tp2.csproj": {
+    "C:\\Users\\Electra\\Downloads\\GitTrabajos\\CRUD-API-REST-\\GithubVisualstudio\\Tp2\\Tp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Electra\\GithubVisualstudio\\Tp2\\Tp2.csproj",
+        "projectUniqueName": "C:\\Users\\Electra\\Downloads\\GitTrabajos\\CRUD-API-REST-\\GithubVisualstudio\\Tp2\\Tp2.csproj",
         "projectName": "Tp2",
-        "projectPath": "C:\\Users\\Electra\\GithubVisualstudio\\Tp2\\Tp2.csproj",
+        "projectPath": "C:\\Users\\Electra\\Downloads\\GitTrabajos\\CRUD-API-REST-\\GithubVisualstudio\\Tp2\\Tp2.csproj",
         "packagesPath": "C:\\Users\\Electra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Electra\\GithubVisualstudio\\Tp2\\obj\\",
+        "outputPath": "C:\\Users\\Electra\\Downloads\\GitTrabajos\\CRUD-API-REST-\\GithubVisualstudio\\Tp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Electra\\AppData\\Roaming\\NuGet\\NuGet.Config"

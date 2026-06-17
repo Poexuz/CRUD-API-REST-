@@ -1,0 +1,7 @@
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.csproj.AssemblyReference.cache
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.AssemblyInfoInputs.cache
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.AssemblyInfo.cs
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.csproj.CoreCompileInputs.cache
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Electra\Downloads\GitTrabajos\CRUD-API-REST-\GithubVisualstudio\Tp2\obj\Debug\net6.0\Tp2.MvcApplicationPartsAssemblyInfo.cache
