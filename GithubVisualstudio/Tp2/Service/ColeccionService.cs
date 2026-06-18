@@ -130,7 +130,7 @@ public class ColeccionService
         return listaColeccion;
     }
 
-    public void UpdateColeccionUsuario(Coleccion coleccion){
+    public void UpdateColeccion(Coleccion coleccionActualizada){
         
         using var cn = new SqliteConnection(_connection);
         cn.Open(); 
@@ -141,13 +141,13 @@ public class ColeccionService
         SET UsuarioId = $usuarioId, JuegoId = $juegoId
         WHERE Id = $id;
         ";
-        cmd.Parameters.AddWithValue("$id", coleccion.Id);   
-        cmd.Parameters.AddWithValue("$usuarioId", coleccion.UsuarioId);   
-        cmd.Parameters.AddWithValue("$juegoId", coleccion.JuegoId);
+        cmd.Parameters.AddWithValue("$id", coleccionActualizada.Id);   
+        cmd.Parameters.AddWithValue("$usuarioId", coleccionActualizada.UsuarioId);   
+        cmd.Parameters.AddWithValue("$juegoId", coleccionActualizada.JuegoId);
         cmd.ExecuteNonQuery();
     }
 
-    public void DeleteColeccionUsuario(int id){
+    public void DeleteColeccion(int id){
         
         using var cn = new SqliteConnection(_connection);
         cn.Open(); 

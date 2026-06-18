@@ -41,6 +41,19 @@ public class ColeccionController : ControllerBase
         var coleccionJuego = _Service.ObtenerColeccionJuego(juegoId);
         return Ok(coleccionJuego);
     }
-    
-}
 
+    [HttpPut("{id}")]
+    public IActionResult ActualizarColeccion([FromBody] Coleccion coleccionActualizada)
+    {
+        _Service.UpdateColeccion(coleccionActualizada);
+        return Ok();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult EliminarColeccion([FromRoute] int id)
+    {
+        _Service.DeleteColeccion(id);
+        return Ok();
+    }
+
+}

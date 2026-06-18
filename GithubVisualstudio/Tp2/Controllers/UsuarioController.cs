@@ -8,6 +8,7 @@ namespace Tp2.Controllers;
 public class UsuarioController : ControllerBase
 {
     private readonly UsuarioService _Service;
+    
     public UsuarioController(){
         _Service = new UsuarioService();
     }
