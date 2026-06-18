@@ -1,6 +1,7 @@
 namespace Tp2.Service;
 using Microsoft.Data.Sqlite;
 using Tp2.Models;
+
 public class JuegoService  {
     string _connection = "Data Source=BD/Juego.db";
 
@@ -87,6 +88,7 @@ public class JuegoService  {
         cmd.Parameters.AddWithValue("$id", id);
         cmd.ExecuteNonQuery();
     }
+
 
 
 }
