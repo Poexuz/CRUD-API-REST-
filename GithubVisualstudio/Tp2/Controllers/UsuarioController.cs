@@ -38,6 +38,5 @@ public class UsuarioController : ControllerBase
         _Service.DeleteUsuario(id);
         return Ok();
     }
-
-
+    
 }

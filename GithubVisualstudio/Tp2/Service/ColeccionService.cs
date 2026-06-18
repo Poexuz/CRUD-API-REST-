@@ -1,7 +1,7 @@
 namespace Tp2.Service;
 using Microsoft.Data.Sqlite;
 using Tp2.Models;
-
+using Tp2.Dto;
 public class ColeccionService
 {
 
@@ -26,7 +26,7 @@ public class ColeccionService
         }
     
 
-    // Crear una coleccion con la id de juego y usuario.
+    // Crear una coleccion con la id del juego y del usuario.
     public void CrearColeccion(Coleccion coleccion){
         
         using var cn = new SqliteConnection(_connection);
@@ -42,70 +42,90 @@ public class ColeccionService
         cmd.ExecuteNonQuery();
     }
 
-    // Obtener el contenido de coleccion por su id.
-    public List<Coleccion> ObtenerColeccion(){
-        var listaColeccion = new List<Coleccion>();
+    // Obtener el contenido de coleccion por usuario.
+    public List<ColeccionDto> ObtenerColeccion(){
+        var listaColeccion = new List<ColeccionDto>();
 
         using var cn = new SqliteConnection(_connection);
         cn.Open();
 
         using var cmd = cn.CreateCommand();
-        cmd.CommandText=@"SELECT Id, UsuarioId, JuegoId FROM Coleccion";
+        cmd.CommandText=@"
+            SELECT u.Nombre, j.Nombre
+            FROM Coleccion c
+            JOIN Usuario u ON c.UsuarioId = u.Id
+            JOIN Juego j ON c.JuegoId = j.Id";
         using var reader = cmd.ExecuteReader();
         
         while (reader.Read())
         {
-            listaColeccion.Add(new Coleccion{
-            Id= reader.GetInt32(0),
-            UsuarioId=reader.GetInt32(1),
-            JuegoId=reader.GetInt32(2)
-            });
+            var usuario = new Usuario{
+                Nombre = reader.GetString(0)
+            };
+            var juego = new Juego{
+                Nombre = reader.GetString(1)
+            };
+            listaColeccion.Add(new ColeccionDto(usuario, juego));
         }
         return listaColeccion;
     }
 
     // Obtener coleccion por id de usuario.
-    public List<Coleccion> ObtenerColeccionUsuario(int usuarioId){
-        var listaColeccion = new List<Coleccion>();
+    public List<ColeccionDto> ObtenerColeccionUsuario(int usuarioId){
+        var listaColeccion = new List<ColeccionDto>();
 
         using var cn = new SqliteConnection(_connection);
         cn.Open();
 
         using var cmd = cn.CreateCommand();
-        cmd.CommandText=@"SELECT Id, UsuarioId, JuegoId FROM Coleccion WHERE UsuarioId = $usuarioId";
+        cmd.CommandText=@"
+            SELECT u.Nombre, j.Nombre
+            FROM Coleccion c
+            JOIN Usuario u ON c.UsuarioId = u.Id
+            JOIN Juego j ON c.JuegoId = j.Id
+            WHERE c.UsuarioId = $usuarioId";
         cmd.Parameters.AddWithValue("$usuarioId", usuarioId);
         using var reader = cmd.ExecuteReader();
         
         while (reader.Read())
         {
-            listaColeccion.Add(new Coleccion{
-            Id= reader.GetInt32(0),
-            UsuarioId=reader.GetInt32(1),
-            JuegoId=reader.GetInt32(2)
-            });
+            var usuario = new Usuario{
+                Nombre = reader.GetString(0)
+            };
+            var juego = new Juego{
+                Nombre = reader.GetString(1)
+            };
+            listaColeccion.Add(new ColeccionDto(usuario, juego));
         }
         return listaColeccion;
     }
 
     // Obtener coleccion por id de Juego.
-    public List<Coleccion> ObtenerColeccionJuego(int juegoId){
-        var listaColeccion = new List<Coleccion>();
+    public List<ColeccionDto> ObtenerColeccionJuego(int juegoId){
+        var listaColeccion = new List<ColeccionDto>();
 
         using var cn = new SqliteConnection(_connection);
         cn.Open();
 
         using var cmd = cn.CreateCommand();
-        cmd.CommandText=@"SELECT Id, UsuarioId, JuegoId FROM Coleccion WHERE JuegoId = $juegoId";
+        cmd.CommandText=@"
+            SELECT u.Nombre, j.Nombre
+            FROM Coleccion c
+            JOIN Usuario u ON c.UsuarioId = u.Id
+            JOIN Juego j ON c.JuegoId = j.Id
+            WHERE c.JuegoId = $juegoId";
         cmd.Parameters.AddWithValue("$juegoId", juegoId);
         using var reader = cmd.ExecuteReader();
         
         while (reader.Read())
         {
-            listaColeccion.Add(new Coleccion{
-            Id= reader.GetInt32(0),
-            UsuarioId=reader.GetInt32(1),
-            JuegoId=reader.GetInt32(2)
-            });
+            var usuario = new Usuario{
+                Nombre = reader.GetString(0)
+            };
+            var juego = new Juego{
+                Nombre = reader.GetString(1)
+            };
+            listaColeccion.Add(new ColeccionDto(usuario, juego));
         }
         return listaColeccion;
     }

@@ -39,8 +39,5 @@ private readonly JuegoService _Service;
         _Service.DeleteJuego(id);
         return Ok();
     }
-
     
-    
-
 }

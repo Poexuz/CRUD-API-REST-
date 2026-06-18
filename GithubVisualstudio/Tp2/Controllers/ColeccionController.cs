@@ -27,7 +27,7 @@ public class ColeccionController : ControllerBase
     }
 
     // Obtener la coleccion de un usuario especifico.
-    [HttpGet("/Usuario/{usuarioId}")]
+    [HttpGet("Usuario/{usuarioId}")]
     public IActionResult ObtenerColeccionUsuario([FromRoute] int usuarioId)
     {
         var coleccionUsuario = _Service.ObtenerColeccionUsuario(usuarioId);
@@ -35,34 +35,12 @@ public class ColeccionController : ControllerBase
     }
 
     // Obtener la coleccion de un juego especifico.
-    [HttpGet("/Juego/{juegoId}")]
+    [HttpGet("Juego/{juegoId}")]
     public IActionResult ObtenerColeccionJuego([FromRoute] int juegoId)
     {
         var coleccionJuego = _Service.ObtenerColeccionJuego(juegoId);
         return Ok(coleccionJuego);
     }
-
-
     
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 

@@ -33,10 +33,7 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
-=======
->>>>>>> def958dfa3aebabf902e7aa2c1d7b5c8cbaa495a
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -58,12 +55,9 @@
         }
       },
       "SQLitePCLRaw.core/2.1.11": {
-<<<<<<< HEAD
         "dependencies": {
           "System.Memory": "4.5.3"
         },
-=======
->>>>>>> def958dfa3aebabf902e7aa2c1d7b5c8cbaa495a
         "runtime": {
           "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
             "assemblyVersion": "2.1.11.2622",
@@ -203,10 +197,7 @@
       },
       "Swashbuckle.AspNetCore/6.5.0": {
         "dependencies": {
-<<<<<<< HEAD
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-=======
->>>>>>> def958dfa3aebabf902e7aa2c1d7b5c8cbaa495a
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
@@ -241,12 +232,8 @@
             "fileVersion": "6.5.0.0"
           }
         }
-<<<<<<< HEAD
       },
       "System.Memory/4.5.3": {}
-=======
-      }
->>>>>>> def958dfa3aebabf902e7aa2c1d7b5c8cbaa495a
     }
   },
   "libraries": {
@@ -269,7 +256,6 @@
       "path": "microsoft.data.sqlite.core/10.0.9",
       "hashPath": "microsoft.data.sqlite.core.10.0.9.nupkg.sha512"
     },
-<<<<<<< HEAD
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
       "serviceable": true,
@@ -277,8 +263,6 @@
       "path": "microsoft.extensions.apidescription.server/6.0.5",
       "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
     },
-=======
->>>>>>> def958dfa3aebabf902e7aa2c1d7b5c8cbaa495a
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
       "serviceable": true,
@@ -341,7 +325,6 @@
       "sha512": "sha512-OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
-<<<<<<< HEAD
     },
     "System.Memory/4.5.3": {
       "type": "package",
@@ -349,8 +332,6 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
-=======
->>>>>>> def958dfa3aebabf902e7aa2c1d7b5c8cbaa495a
     }
   }
 }
